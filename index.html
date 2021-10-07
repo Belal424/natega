@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <title>Natega</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <h1>الان نتيجة الصف الاول والثاني الثانوي</h1>
+    </div>
+    <!-- End Header -->
+    <div class="natega">
+        <input type="text" id="name" placeholder="الاسم">
+        <input type="number" id="number" placeholder="رقم الجلوس">
+        <select name="grade" class="grade" id="grade" onchange="sho3ba_()">
+            <option value="2" disabled selected>المرحلة</option>
+            <option value="0">الصف الاول</option>
+            <option value="1">الصف الثاني</option>
+        </select>
+        <select name="sho3ba" class="sho3ba" id="sho3ba">
+            <option id="sho3ba_select" value="2" disabled selected>الشعبة</option>
+            <option value="0">أدبي</option>
+            <option value="1">علمي</option>
+        </select>
+        <p class="alert" id="alert"></p>
+        <button onclick="result()">عرض النتيجة</button>
+    </div>
+    <div class="result">
+        <div class="conttent">
+        <div class="details">
+        <p id="name1"></p>
+        <p id="number1"></p>
+        <p id="grade1"></p>
+        </div>
+        <div class="results first" id="first_">
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">اللغة العربية</span>
+        </div>
+        <div>
+        <span class="degree">راسب</span>
+        <span class="subject">الرياضيات</span>
+        </div>
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">اللغة الثانية</span>
+        </div>
+        <div>
+        <span class="degree">راسب</span>
+        <span class="subject">اللغة الانجليزية</span>
+        </div>
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">كيمياء</span>
+        </div>
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">فيزياء</span>
+        </div>
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">أحياء</span>
+        </div>
+        <div>
+        <span class="degree">راسب</span>
+        <span class="subject">فلسفة</span>
+        </div>
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">تاريخ</span>
+        </div>
+        <div>
+        <span class="degree nage7">ناجح</span>
+        <span class="subject">جغرافيا</span>
+        </div>
+        </div>
+        <div class="results adby" id="adby">
+            <div>
+            <span class="degree">راسب</span>
+            <span class="subject">اللغة العربية</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">اللغة الثانية</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">اللغة الانجليزية</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">تاريخ</span>
+            </div>
+            <div>
+            <span class="degree">راسب</span>
+            <span class="subject">جغرافيا</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">علم النفس</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">فلسفة</span>
+            </div>
+        </div>
+        <div class="results 3lmy" id="_3lmy">
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">اللغة العربية</span>
+            </div>
+            <div>
+            <span class="degree">راسب</span>
+            <span class="subject">الرياضيات</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">اللغة الثانية</span>
+            </div>
+            <div>
+            <span class="degree">راسب</span>
+            <span class="subject">اللغة الانجليزية</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">كيمياء</span>
+            </div>
+            <div>
+            <span class="degree">راسب</span>
+            <span class="subject">فيزياء</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">أحياء</span>
+            </div>
+            <div>
+            <span class="degree nage7">ناجح</span>
+            <span class="subject">جيولوجيا</span>
+            </div>
+        </div>
+        </div>
+        </div>
+        <p class="warning" id="warning">ملحوظة : هذا الموقع للهزار فقط والنتيجة لم تظهر حتى الان</p>
+        <footer id="footer">
+        <p>Design with Belal &copy; 2022 </p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

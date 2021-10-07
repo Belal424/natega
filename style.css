@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --mainColor : #28A745;
+    --secondaryColor : crimson;
+}
+.conttent {
+    width: 80%;
+    margin: 0 10%;
+}
+.header {
+    background-color: var(--mainColor);
+    width: 100%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.header h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.natega {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 50px 0;
+}
+.natega input , select , button{
+    margin: 10px 0;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: transparent;
+}
+.natega .sho3ba {
+    display: none;
+}
+.natega .alert {
+    color: crimson;
+    text-align: center;
+}
+.natega button {
+    background-color: var(--mainColor);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.details {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+.results{
+    border-radius: 70px;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: none;
+    margin: 25px 0;
+}
+.results div {
+    border-bottom :2px solid #000;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    justify-items: end;
+}
+.results div:last-child {
+    border: none;
+}
+.results span {
+    width: calc(90% / 2);
+    padding: 10px;
+    font-weight: bold;
+}
+.results div:nth-child(2) {
+    background-color: #eee;
+}
+.results div:nth-child(4) {
+    background-color: #eee;
+}
+.results div:nth-child(6) {
+    background-color: #eee;
+}
+.results div:nth-child(8) {
+    background-color: #eee;
+}
+.results div:nth-child(10) {
+    background-color: #eee;
+}
+.results .degree {
+    border-right: 1px solid #000;
+    color: red;
+}
+.results .nage7 {
+    color: #28A745;
+}
+.warning {
+    font-size: 13px;
+    color: var(--secondaryColor);
+    text-align: right;
+    display: none;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--mainColor);
+    color: #fff;
+    display: none;
+}
