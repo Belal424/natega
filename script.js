@@ -25,7 +25,6 @@ function result(){
     if (name.value == "" | 
     number.value == "" | 
     grade.value == 2 | 
-    name.value.length <= 4 |
     isNaN(number.value)){
         alert_.innerHTML = "برجاء كتابة البيانات صحيحة"
     } else if (sho3ba.value == 2 & grade.value == 1){
