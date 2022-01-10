@@ -101,7 +101,7 @@
     color: #28A745;
 }
 .warning {
-    font-size: 13px;
+    font-size: 20px;
     color: var(--secondaryColor);
     text-align: right;
     display: none;
