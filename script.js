@@ -53,3 +53,14 @@ function result(){
         _3lmy.style.display = "none";
     }
 }
+
+
+// Rewarded interstitial
+
+show_9611318().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen an ad!');
+})
+
+        
